@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{margin:0;
+padding:0;
+background-image: linear-gradient(to left, #00CED1, #00BFFF, #FFFAF0, #FFD700,#ADFF2F);}
+
+.dropdown{background :rgba(0,0,0,0.5);
+text-align:center;
+margin-top:8px;
+padding:5px 0px}
+
+
+
+.dropdown a{text-decoration:none;
+font-weight:bold;
+text-transform:uppercase ;
+padding:2px 12px;
+color:white;}
+
+.dropdown a:hover{color:red;
+background-image: linear-gradient(to bottom, #7FFF00, #6495ED, #00FFFF, #9932CC);
+border-radius:3px;
+}
+
+.dropdown-container{display:inline;
+position:relative}
+.dropdown-contant a{color:black;
+border-bottom:2px dotted;
+border-top:1px solid}
+.dropdown-contant a:hover{color:white;
+background-image: linear-gradient(to left, #7FFF00, #6495ED, #00FFFF, #9932CC);
+}
+.dropdown-contant{position:absolute;
+text-align:left;
+top:25px;
+border-radius:3px;
+background:orange;
+display :none;
+  box-shadow: 4px 4px 4px orange}
+.dropdown-contant a{display:block}
+
+.dropdown-container:hover .dropdown-contant{display:block}
+</style>
+</head>
+<body>
+  <div class="dropdown">
+      <a href="#" >home</a>
+         <div class="dropdown-container">
+      <a href="#" >blog</a>
+      
+            <div class="dropdown-contant">
+              <a href="#" >Education</a>
+              <a href="#" >Sports </a>
+              <a href="#" >News</a>
+              <a href="#" >Entertainment </a>
+            </div>
+         </div>
+      <a href="#" >about</a>
+      <a href="#" >Contact</a>
+  </div>
+</body>
+</html>
